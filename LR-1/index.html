@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index by gairatov</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--RGB, CMY, HLS-->
+
+    <div id="picker"></div>
+
+    <div id="color"></div>
+
+    <div class="blocks">
+        <div id="rgb_block">
+            <div class="block_inner">
+                <span class="letter">R</span> 
+                <input type="number" min="0" max="255" value="255" id="number_red" oninput="changeTheValue(rangeRed, numberRed)">
+                <input type="range" min="0" max="255" value="255" id="range_red" oninput="changeTheValue1(rangeRed, numberRed)">
+            </div>
+            <div class="block_inner">
+                <span class="letter">G</span>
+                <input type="number" min="0" max="255" value="255" id="number_green" oninput="changeTheValue(rangeGreen, numberGreen)">
+                <input type="range" min="0" max="255" value="255" id="range_green" oninput="changeTheValue1(rangeGreen, numberGreen)">
+            </div>
+            <div class="block_inner">
+                <span class="letter">B</span>
+                <input type="number" min="0" max="255" value="255" id="number_blue" oninput="changeTheValue(rangeBlue, numberBlue)">
+                <input type="range" min="0" max="255" value="255" id="range_blue" oninput="changeTheValue1(rangeBlue, numberBlue)">
+            </div>
+        
+        <div id="lab_block">
+            <div class="block_inner">
+                <span class="letter">L</span>
+                <input type="number" min="0" max="100" value="100" id="number_L" oninput="changeTheValue(rangeL, numberL)">
+                <input type="range" min="0" max="100" value="100" id="range_L" oninput="changeTheValue1(rangeL, numberL)">
+            </div>
+            <div class="block_inner">
+                <span class="letter">A</span>
+                <input type="number" min="-128" max="128" value="0" id="number_A" oninput="changeTheValue(rangeA, numberA)">
+                <input type="range" min="-128" max="128" value="0" id="range_A" oninput="changeTheValue1(rangeA, numberA)">
+            </div>
+            <div class="block_inner">
+                <span class="letter">B</span>
+                <input type="number" min="-128" max="100" value="0" id="number_B" oninput="changeTheValue(rangeB, numberB)">
+                <input type="range" min="-128" max="100" value="0" id="range_B" oninput="changeTheValue1(rangeB, numberB)">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5" defer></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
