@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Info</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Введите путь к папке с изображениями</h3>
+        <form action="/upload" method="post">
+            <div class="input-field">
+                <input type="text" id="folder" name="folder" placeholder="Введите путь к папке">
+            </div>
+            <button class="btn waves-effect waves-light" type="submit">Загрузить</button>
+        </form>
+
+        {% if results %}
+        <h4>Результаты</h4>
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>Имя файла</th>
+                    <th>Размер (пиксели)</th>
+                    <th>Разрешение (dpi)</th>
+                    <th>Глубина цвета (бит)</th>
+                    <th>Глубина цвета</th>
+                    <th>Сжатие</th>
+                    <th>Уровень сжатия (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                <tr>
+                    <td>{{ result["Имя файла"] }}</td>
+                    <td>{{ result["Размер (пиксели)"] }}</td>
+                    <td>{{ result["Разрешение (dpi)"] }}</td>
+                    <td>{{ result["Глубина цвета (бит)"] }}</td>
+                    <td>{{ result["Глубина цвета"] }}</td>
+                    <td>{{ result["Сжатие"] }}</td>
+                    <td>{{ result["Уровень сжатия (%)"] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
