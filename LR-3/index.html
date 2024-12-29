@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Процесс Фото</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Выгрузить и Процесс изображение</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <select name="method">
+            <option value="linear_contrast_stretching">Линейное контрастное растяжение</option>
+            <option value="histogram_equalization">Выравнивание гистограммы (в отте,нках серого)</option>
+            <option value="histogram_equalization_rgb">Выравнивание гистограммы (RGB)</option>
+            <option value="histogram_equalization_hsv">Выравнивание гистограммы (HSV)</option>
+            <option value="global_thresholding">Глобальный порог</option>
+            <option value="local_thresholding">Локальное пороговое значение</option>
+            <option value="adaptive_thresholding">Адаптивное пороговое значение</option>
+            <option value="morphological_processing">Морфологическая обработка</option>
+        </select>
+        <button type="submit">Начать процесс</button>
+    </form>
+    <img id="output" src="" alt="Процесс Фото">
+    <script src="/static/scripts.js"></script>
+</body>
+</html>

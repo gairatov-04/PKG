@@ -1,0 +1,41 @@
+body {
+    background-image: url(https://wallpapers.com/images/hd/blurry-background-hgjn1evydsxrqx56.jpg);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: #007BFF; /*фон*/
+    color: white; /*Белый текст*/
+    border: none;
+    padding: 2px 8px; /*Отступы*/
+    border-radius: 20px;/*Закругление...*/
+    cursor: pointer;/*Указатель при наведении*/
+    font-size: 42px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    transition:1.2s;
+}
+button{
+    background-color: #007BFF; /*фон*/
+    color: white; /*Белый текст*/
+    border: none;
+    padding: 8px 24px; /*Отступы*/
+    border-radius: 20px;/*Закругление...*/
+    cursor: pointer;/*Указатель при наведении*/
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    transition:1.2s;
+}
+
+form {
+    margin: 20px;
+}
+
+img {
+    margin-top: 12px;
+    max-width: 60%;
+    height:min-content;
+}
