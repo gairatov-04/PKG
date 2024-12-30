@@ -1,0 +1,47 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "ExampleTriangleGeometry"
+                }
+            ],
+            "className": "ExampleTriangleGeometry",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "verts",
+                    "notify": "verticesChanged",
+                    "read": "getVertices",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false,
+                    "write": "setVertices"
+                }
+            ],
+            "qualifiedClassName": "ExampleTriangleGeometry",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "verticesChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuick3DGeometry"
+                }
+            ]
+        }
+    ],
+    "inputFile": "letter.h",
+    "outputRevision": 68
+}
